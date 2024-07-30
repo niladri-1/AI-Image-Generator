@@ -2,19 +2,13 @@
 
 A full stack MERN application that uses the OpenAI API to generate images. Features include image generation, user profiles, and social sharing, with Cloudinary for image storage.
 
-## Features
-
-- AI Image Generation
-- User Profiles
-- Social Sharing
-
 ## Technologies Used
 
 - **Frontend:** React
 - **Backend:** Node.js, Express
 - **Database:** MongoDB
 - **API Integrations:** OpenAI, Cloudinary
-- **Deployment:** Heroku, Vercel
+- **Deployment:** Vercel, Netlify
 
 ## Setup
 
@@ -37,27 +31,30 @@ A full stack MERN application that uses the OpenAI API to generate images. Featu
    ```bash
    cd client
    npm install
-   
+
    cd ../server
    npm install
    ```
 
-3. Create a `.env` file in the server directory with:
+3. Create a `server/.env` file in the server directory with:
    ```
-   OPENAI_API_KEY="<GET_OPENAI_API>"
+    OPENAI_API_KEY="<GET_THE_OPENAI_KEY>"
+    MONGODB_URL="<GET_MONGODB_URL>"
 
-   MONGODB_URL="<GET_MONGODB_URL>"
+    CLOUDINARY_CLOUD_NAME="<GET_CLOUD_NAME>"
+    CLOUDINARY_API_KEY="<GET_API_KRY>"
+    CLOUDINARY_API_SECRET="<GET_SECRET_API_KEY>"
    ```
 
-## Run the Project
+## Run The Project
 
-1. **Frontend**: Set up React, build UI, integrate OpenAI API.
+1. **`Frontend`**: Set up React, build UI, integrate OpenAI API.
    ```bash
    cd client
-   npm start dev
+   npm run dev
    ```
 
-2. **Backend**: Set up Express server, MongoDB schemas, API routes.
+2. **`Backend`**: Set up Express server, MongoDB schemas, API routes.
    ```bash
    cd server
    npm start
@@ -66,7 +63,7 @@ A full stack MERN application that uses the OpenAI API to generate images. Featu
 ## Deployment
 
 1. Prepare the app for production.
-2. Deploy to Heroku or Vercel.
+2. Deploy to Vercel or Netlify.
 
 ## Notes
 
@@ -77,4 +74,4 @@ A full stack MERN application that uses the OpenAI API to generate images. Featu
 
 This app demonstrates the process of building a MERN stack application with AI image generation capabilities.
 
-Happy coding!
+Happy coding! `^_^`
